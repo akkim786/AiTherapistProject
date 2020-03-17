@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noarchive">
+    <meta name="description" content="Slicebox - 3D Image Slider with Fallback" />
+    <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic" />
+	<meta name="author" content="Pedro Botelho for Codrops" />	
     <title> Ai Therapist | A Virtual Doctor </title>
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -30,9 +33,14 @@
     <link rel="stylesheet" href="assets/team.css">
     <!-- team css -->
     <link rel="stylesheet" href="assets/css/testimonial.css">
-    <!-- testimonial -->
+    <!-- testimonial css -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+    <!-- Screenshots css -->
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="assets\css\demo.css" />
+	<link rel="stylesheet" type="text/css" href="assets\css\slicebox.css" />
+	<link rel="stylesheet" type="text/css" href="assets\css\custom.css" />
     <style>
         body{
             overflow:hidden;
@@ -46,7 +54,7 @@
         <div class="container nav-container">
             <div class="responsive-mobile-menu">
                 <div class="logo-wrapper">
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <img src="assets/img/logo.png" alt="logo">
                     </a>
                 </div>
@@ -58,7 +66,7 @@
             <div class="collapse navbar-collapse" id="appside_main_menu">
                 <ul class="navbar-nav">
                     <li class="current-menu-item">
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#features">Features</a></li>
@@ -66,7 +74,7 @@
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#testimonial">Testimonials</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="login.html">Sign in</a></li>
+                    <li><a href="login.php">Sign in</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -202,7 +210,7 @@
 <!-- counterup area end -->
 
 
-    <!-- HHHHHHHHHHHHHHHHHH        Bigfeature         HHHHHHHHHHHHHHHH -->
+    <!-- HHHHHHHHHHHHHHHHHH        feature         HHHHHHHHHHHHHHHH -->
     <section id="features" class="img-block-3col wrapper">
         <div class ="row">
             <div class ="col-md-3"></div>
@@ -252,7 +260,133 @@
                 </div>
             </div>
         </div> <!-- /.container -->
-    </section> <!-- /#bigfeatures -->
+    </section> <!-- /#features -->
+
+
+
+    <!--Screenshots start -->
+    
+    <section id="screenshot" >
+    <div class ="row">
+        <div class ="col-md-3"></div>
+        <div class ="col-md-6"><div class ="text-center"><h2><u>Screenshots</u></h2></div>
+    </div>
+		<div class="container"style="margin-top:9.5%;">
+
+			<div class="wrapper">
+
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2969141180" target="_blank"><img src="assets\img\images\1.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Creative Lifesaver</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="assets\img\images\2.jpg" alt="image2"/></a>
+						<div class="sb-description">
+							<h3>Honest Entertainer</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="assets\img\images\3.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Brave Astronaut</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="assets\img\images\4.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Affectionate Decision Maker</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="assets\img\images\5.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Faithful Investor</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="assets\img\images\6.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Groundbreaking Artist</h3>
+						</div>
+					</li>
+					<li>
+						<a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="assets\img\images\7.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Selfless Philantropist</h3>
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Previous</a>
+				</div>
+
+			</div><!-- /wrapper -->
+			
+
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
+    </section>
+
+    <!--Screenshots end -->
 
     <!--teastimonials -->
 	
@@ -386,6 +520,8 @@
     <script src="assets/js/jquery.js"></script>
     <!-- testimonial jquery -->
     <script src="assets/js/testimonial.js"></script>
+    <!-- Screenshots jquery -->
+    <script type="text/javascript" src="assets\js\modernizr.custom.46884.js"></script>
     <!-- team jquery -->
     <script src="assets/js/team.js"></script>
     <!-- popper -->
