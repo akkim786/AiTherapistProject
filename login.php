@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- login css -->
     <link rel="stylesheet" href="assets\css\login.css">
     <title>Sign in</title>
@@ -85,6 +87,9 @@
 
 <!-- login end -->
 
+
+<!-- jquery -->
+<script src="assets/js/jquery.js"></script>
 <!-- login jquery -->
 <script src="assets\js\login.js"></script>
 </body>

@@ -36,11 +36,9 @@
     <!-- testimonial css -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
-    <!-- Screenshots css -->
-    <link rel="shortcut icon" href="../favicon.ico"> 
-    <link rel="stylesheet" type="text/css" href="assets\css\demo.css" />
-	<link rel="stylesheet" type="text/css" href="assets\css\slicebox.css" />
-	<link rel="stylesheet" type="text/css" href="assets\css\custom.css" />
+    <!-- Screenshots css --> 
+    <link rel="stylesheet" type="text/css" href="assets\css\screenshot.css" />
+	<link rel="stylesheet" type="text/css" href="assets\css\jquery.hislide.min.css" />
     <style>
         body{
             overflow:hidden;
@@ -266,127 +264,54 @@
 
     <!--Screenshots start -->
     
-    <section id="screenshot" >
+    <section id="screenshot" style=" background-image: url('assets\img\ur.jpg');background-size:cover;background-image: fixed;">
     <div class ="row">
         <div class ="col-md-3"></div>
         <div class ="col-md-6"><div class ="text-center"><h2><u>Screenshots</u></h2></div>
     </div>
-		<div class="container"style="margin-top:9.5%;">
-
-			<div class="wrapper">
-
-				<ul id="sb-slider" class="sb-slider">
-					<li>
-						<a href="http://www.flickr.com/photos/strupler/2969141180" target="_blank"><img src="assets\img\images\1.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Creative Lifesaver</h3>
-						</div>
-					</li>
-					<li>
-						<a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="assets\img\images\2.jpg" alt="image2"/></a>
-						<div class="sb-description">
-							<h3>Honest Entertainer</h3>
-						</div>
-					</li>
-					<li>
-						<a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="assets\img\images\3.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Brave Astronaut</h3>
-						</div>
-					</li>
-					<li>
-						<a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="assets\img\images\4.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Affectionate Decision Maker</h3>
-						</div>
-					</li>
-					<li>
-						<a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="assets\img\images\5.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Faithful Investor</h3>
-						</div>
-					</li>
-					<li>
-						<a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="assets\img\images\6.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Groundbreaking Artist</h3>
-						</div>
-					</li>
-					<li>
-						<a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="assets\img\images\7.jpg" alt="image1"/></a>
-						<div class="sb-description">
-							<h3>Selfless Philantropist</h3>
-						</div>
-					</li>
-				</ul>
-
-				<div id="shadow" class="shadow"></div>
-
-				<div id="nav-arrows" class="nav-arrows">
-					<a href="#">Next</a>
-					<a href="#">Previous</a>
-				</div>
-
-			</div><!-- /wrapper -->
-			
-
+        <div class ="container-fluid">
+            <div class ="row">
+                <div class ="col-md-2"></div>
+                <div class ="col-md-6">
+                <div class="slide hi-slide ">
+		  <div class="hi-prev "></div>
+          <div class="hi-next "></div>
+			<ul>
+				<li>
+				<img src="assets\img\images\app-1.jpg" alt="Img 1" /></li>
+				<li><img src="https://images.pexels.com/photos/405240/pexels-photo-405240.jpeg?cs=srgb&dl=attractive-beautiful-curtain-405240.jpg&fm=jpg" alt="Img 2" /></li>
+				<li><img src="https://images.pexels.com/photos/1784982/pexels-photo-1784982.jpeg?cs=srgb&dl=attractive-beautiful-beauty-1784982.jpg&fm=jpg" alt="Img 3" /></li>
+				<li><img src="https://images.pexels.com/photos/219582/pexels-photo-219582.jpeg?cs=srgb&dl=attractive-beautiful-beauty-219582.jpg&fm=jpg" alt="Img 4" /></li>
+				<li><img src="https://images.pexels.com/photos/247124/pexels-photo-247124.jpeg?cs=srgb&dl=attractive-beautiful-beauty-247124.jpg&fm=jpg" alt="Img 5" /></li>
+				<li><img src="https://images.pexels.com/photos/1808777/pexels-photo-1808777.png?cs=srgb&dl=attractive-beautiful-beautiful-girl-1808777.jpg&fm=jpg" alt="Img 6" /></li>
+				<li><img src="https://images.pexels.com/photos/754448/pexels-photo-754448.jpeg?cs=srgb&dl=attractive-beautiful-beauty-754448.jpg&fm=jpg" alt="Img 7" /></li>
+                <li><img src="https://images.pexels.com/photos/761536/pexels-photo-761536.jpeg?cs=srgb&dl=attractive-beautiful-beauty-761536.jpg&fm=jpg" alt="Img 7" /></li>
+			</ul>
 		</div>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slicebox.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				
-				var Page = (function() {
-
-					var $navArrows = $( '#nav-arrows' ).hide(),
-						$shadow = $( '#shadow' ).hide(),
-						slicebox = $( '#sb-slider' ).slicebox( {
-							onReady : function() {
-
-								$navArrows.show();
-								$shadow.show();
-
-							},
-							orientation : 'r',
-							cuboidsRandom : true,
-							disperseFactor : 30
-						} ),
-						
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							// add navigation events
-							$navArrows.children( ':first' ).on( 'click', function() {
-
-								slicebox.next();
-								return false;
-
-							} );
-
-							$navArrows.children( ':last' ).on( 'click', function() {
-								
-								slicebox.previous();
-								return false;
-
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-			});
+     </div>
+    </div>
+    </div>
+		
+		
+		
+		
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="assets\js\jquery.hislide.js" ></script>
+        <script type="text/javascript" src="assets\js\jquery.hislide.min.js" ></script>
+		<script>
+			$('.slide').hiSlide();
 		</script>
+
     </section>
 
     <!--Screenshots end -->
+
+
+    <!-- Pricing start -->
+
+    
+
+    <!-- Pricing end -->
 
     <!--teastimonials -->
 	
@@ -521,7 +446,7 @@
     <!-- testimonial jquery -->
     <script src="assets/js/testimonial.js"></script>
     <!-- Screenshots jquery -->
-    <script type="text/javascript" src="assets\js\modernizr.custom.46884.js"></script>
+    
     <!-- team jquery -->
     <script src="assets/js/team.js"></script>
     <!-- popper -->
