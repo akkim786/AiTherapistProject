@@ -33,6 +33,10 @@
     <link rel="stylesheet" href="assets/team.css">
     <!-- team css -->
     <link rel="stylesheet" href="assets/css/testimonial.css">
+    <!-- pricing css -->
+    <link rel="stylesheet" href="assets\css\pricing.css">
+    <!-- bottto top css -->
+    <link rel="stylesheet" href="assets\css\bottom.css">
     <!-- testimonial css -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
@@ -264,43 +268,11 @@
 
     <!--Screenshots start -->
     
-    <section id="screenshot" style=" background-image: url('assets\img\ur.jpg');background-size:cover;background-image: fixed;">
+    <section id="screenshot" >
     <div class ="row">
         <div class ="col-md-3"></div>
         <div class ="col-md-6"><div class ="text-center"><h2><u>Screenshots</u></h2></div>
-    </div>
-        <div class ="container-fluid">
-            <div class ="row">
-                <div class ="col-md-2"></div>
-                <div class ="col-md-6">
-                <div class="slide hi-slide ">
-		  <div class="hi-prev "></div>
-          <div class="hi-next "></div>
-			<ul>
-				<li>
-				<img src="assets\img\images\app-1.jpg" alt="Img 1" /></li>
-				<li><img src="https://images.pexels.com/photos/405240/pexels-photo-405240.jpeg?cs=srgb&dl=attractive-beautiful-curtain-405240.jpg&fm=jpg" alt="Img 2" /></li>
-				<li><img src="https://images.pexels.com/photos/1784982/pexels-photo-1784982.jpeg?cs=srgb&dl=attractive-beautiful-beauty-1784982.jpg&fm=jpg" alt="Img 3" /></li>
-				<li><img src="https://images.pexels.com/photos/219582/pexels-photo-219582.jpeg?cs=srgb&dl=attractive-beautiful-beauty-219582.jpg&fm=jpg" alt="Img 4" /></li>
-				<li><img src="https://images.pexels.com/photos/247124/pexels-photo-247124.jpeg?cs=srgb&dl=attractive-beautiful-beauty-247124.jpg&fm=jpg" alt="Img 5" /></li>
-				<li><img src="https://images.pexels.com/photos/1808777/pexels-photo-1808777.png?cs=srgb&dl=attractive-beautiful-beautiful-girl-1808777.jpg&fm=jpg" alt="Img 6" /></li>
-				<li><img src="https://images.pexels.com/photos/754448/pexels-photo-754448.jpeg?cs=srgb&dl=attractive-beautiful-beauty-754448.jpg&fm=jpg" alt="Img 7" /></li>
-                <li><img src="https://images.pexels.com/photos/761536/pexels-photo-761536.jpeg?cs=srgb&dl=attractive-beautiful-beauty-761536.jpg&fm=jpg" alt="Img 7" /></li>
-			</ul>
-		</div>
-     </div>
-    </div>
-    </div>
-		
-		
-		
-		
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript" src="assets\js\jquery.hislide.js" ></script>
-        <script type="text/javascript" src="assets\js\jquery.hislide.min.js" ></script>
-		<script>
-			$('.slide').hiSlide();
-		</script>
+    </div> 
 
     </section>
 
@@ -309,7 +281,104 @@
 
     <!-- Pricing start -->
 
-    
+    <section id="pricing">
+    <div class ="row">
+        <div class ="col-md-3"></div>
+        <div class ="col-md-6"><div class ="text-center"><h2><u>Pricing</u></h2></div>
+    </div>
+
+     <!-- #### PRICING TABLE - BOOTSTRAP #### -->
+  
+     
+     <!-- #### Bootstrap CSS #### -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     
+     <!-- #### Google Fonts #### -->
+     <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+ 
+     <!-- #### Font Awesome #### -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+     
+     <!-- #### JavaScript #### -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+   
+ 
+ <section class="bg-light text-center p-5" style ="background:transparent">
+ 
+       <div class="container-fluid">
+         
+         <!-- Tittle -->
+         <div class="row text-muted text-center">
+             <div class="col m-4">
+               <h1 class="mb-4 text-uppercase title"> Pricing Table - Boostrap - Background Image </h1>
+               
+             </div>
+         </div>
+         <!-- End of Tittle -->  
+ 
+ 
+           <div class="row align-items-center">
+ 
+             <div class="col-lg-4">
+               <div class="card card-1 text-light py-4 my-4 mx-auto">
+                 <div class="card-body">
+                   <h5 class="text-uppercase font-weight-bold mb-5"> Monthly Membership </h5>
+                   <h1 class="text-uppercase price"> € 19 </h1>
+                   <ul class="list-unstyled">
+                     <li class="text-uppercase py-3 card-list-item"> Photoshop </li>
+                     <li class="text-uppercase py-3 card-list-item"> After Effects </li>
+                     <li class="text-uppercase py-3 card-list-item"> Graphic Design </li>
+                     <li class="text-uppercase py-3 card-list-item border-0"> Video Montage </li>
+                   </ul>
+                   <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light"> sign-up! </a>
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="col-lg-4">
+                 <div class="card card-2 text-light py-4 my-4 mx-auto">
+                   <div class="card-body">
+                     <h5 class="text-uppercase font-weight-bold mb-5"> Unlimited Access </h5>
+                     <h1 class="text-uppercase price"> € 499 </h1>
+                     <ul class="list-unstyled">
+                       <li class="text-uppercase py-3 card-list-item"> Photoshop </li>
+                       <li class="text-uppercase py-3 card-list-item"> After Effects </li>
+                       <li class="text-uppercase py-3 card-list-item"> Graphic Design </li>
+                       <li class="text-uppercase py-3 card-list-item"> Video Montage </li>
+                       <li class="text-uppercase py-3 card-list-item border-0"> Clip Making </li>
+                     </ul>
+                     <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light"> sign-up! </a>
+                   </div>
+                 </div>
+               </div>
+ 
+               <div class="col-lg-4">
+                   <div class="card card-3 text-light py-4 my-4 mx-auto">
+                     <div class="card-body">
+                       <h5 class="text-uppercase font-weight-bold mb-5"> Annual Membership </h5>
+                       <h1 class="text-uppercase price"> € 119 </h1>
+                       <ul class="list-unstyled">
+                         <li class="text-uppercase py-3 card-list-item"> Photoshop </li>
+                         <li class="text-uppercase py-3 card-list-item"> After Effects </li>
+                         <li class="text-uppercase py-3 card-list-item"> Graphic Design </li>
+                         <li class="text-uppercase py-3 card-list-item border-0"> Video Montage </li>
+                       </ul>
+                       <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light"> sign-up! </a>
+                     </div>
+                   </div>
+                 </div>
+ 
+           </div>
+           
+       </div>
+ 
+     </section>
+
+    </section>
+
 
     <!-- Pricing end -->
 
@@ -440,13 +509,18 @@
   
 <!-- TEAM END -->
 
+<!-- bottom to top start here -->
+<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket" ><i></i></a>
+
+<!-- bottom to top end here -->
+
 
     <!-- jquery -->
     <script src="assets/js/jquery.js"></script>
     <!-- testimonial jquery -->
     <script src="assets/js/testimonial.js"></script>
-    <!-- Screenshots jquery -->
-    
+    <!-- bottom to top jquery -->
+    <script src="assets\js\bottom.js"></script>
     <!-- team jquery -->
     <script src="assets/js/team.js"></script>
     <!-- popper -->
