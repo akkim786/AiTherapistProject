@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="assets\css\pricing.css">
     <!-- bottto top css -->
     <link rel="stylesheet" href="assets\css\bottom.css">
+      <!-- contact css -->
+      <link rel="stylesheet" href="assets\css\contact.css">
     <!-- testimonial css -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
@@ -75,7 +77,14 @@
                     <li><a href="#screenshot">Screenshot</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#testimonial">Testimonials</a></li>
-                    <li><a href="#team">Team</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Extra</a>
+                        <ul class="sub-menu">
+                            <li><a href="support.php">Support</a></li>
+                            <li><a href="speciality.php">Speciality</a></li>
+                            <li><a href="team.php">Core Team</a></li>
+                        </ul>
+                    </li>
                     <li><a href="login.php">Sign in</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -286,7 +295,7 @@
         <div class ="col-md-3"></div>
         <div class ="col-md-6"><div class ="text-center"><h2><u>Pricing</u></h2></div>
     </div>
-
+    </div><br>
      <!-- #### PRICING TABLE - BOOTSTRAP #### -->
   
      
@@ -306,22 +315,10 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
    
  
- <section class="bg-light text-center p-5" style ="background:transparent">
- 
+ <section id ="pricing" style ="background:transparent 9">
        <div class="container-fluid">
-         
-         <!-- Tittle -->
-         <div class="row text-muted text-center">
-             <div class="col m-4">
-               <h1 class="mb-4 text-uppercase title"> Pricing Table - Boostrap - Background Image </h1>
-               
-             </div>
-         </div>
-         <!-- End of Tittle -->  
- 
- 
            <div class="row align-items-center">
- 
+     
              <div class="col-lg-4">
                <div class="card card-1 text-light py-4 my-4 mx-auto">
                  <div class="card-body">
@@ -376,12 +373,8 @@
        </div>
  
      </section>
-
-    </section>
-
-
     <!-- Pricing end -->
-
+<br><br>
     <!--teastimonials -->
 	
 <section class="spacer" id="testimonial">
@@ -478,36 +471,57 @@
 							  </div>
 					</div>
 				</div>
-			</section>
-	<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+			</section><br><br>
+    <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+    
+    <!--testimonial end here-->
 
-<!-- TEAM -->
-<section id ="team" class ="container-fluid">
+   
+
+
+<!--conatct start-->
+
+<section id ="contact">
     <div class ="row">
         <div class ="col-md-3"></div>
-        <div class ="col-md-6"><div class ="text-center"><h2><u>Development Team</u></h2></div>
-        <center><div class ="verticle-line text-center" style= "height:40px;width:3px;background-color: grey;"></div></center>
-        <center><div class ="circle"style ="height:15px;width:15px;border-radius:100%;border:2px solid grey;"></div></center>
+        <div class ="col-md-6"><div class ="text-center"><h2><u>Contact Us</u></h2></div>
     </div>
     </div>
-    <div class ="row">
-        <div class ="col-xs-12">
-            <div class="smoothSlideContainer" >
-                <div class="bar" id="bar1"></div>
-                <div class="bar"  id="bar2"></div>
-                <div class="bar" id="bar3"></div>
-                <div class="bar" id="bar4"></div>
-                <div class="bar2" id="bar5"></div>
-                <div class="bar" id="bar6"></div>
-                <div class="bar2" id="bar7"></div>
-                <div class="bar2" id="bar8"></div>
-                <div id="person"><img id="imgModule" src="https://goj2.com/wp-content/uploads/2019/01/mattSlider.png"></div>
-              </div>
-        </div>
+<div class="main" style ="display:block;" id ="env_msg">
+		<form action="lorem.php" class="form">
+			<div class="formwrap">
+				<div class="fold">
+					<fieldset>
+						<label for="nm">Name</label>
+						<input type="text" name="nm" id="nm" value="Codogram" placeholder="Name">
+					</fieldset>
+					<fieldset>
+						<label for="ml">Email</label>
+						<input type="text" name="ml" id="ml" value="codogram@mail.com" placeholder="Email">
+					</fieldset>
+				</div>
+				<fieldset>
+					<label for="ms">Message</label>
+					<textarea name="ms" id="ms" cols="30" rows="10" placeholder="Message">Hey!!!</textarea>
+				</fieldset>
+			</div>
+			<button class="submit">Send</button>
+			<div class="letterBox">
+				<span class="top"></span>
+				<span class="front"></span>
+			</div>
+		</form>
+    </div>
+    <div class ="row" style ="display:none;" id= "sent_msg">
+        <div class ="col-md-3"></div>
+        <div class ="col-md-6"><div class ="text-center">
+        <div class ="text-center animated zoomIn" style ="padding:30px;"> <i class ="fa fa-envelope" style ="font-size:50px;color:#413e66"></i><div><br>
+            <p>Message sent</p></div>
+    </div>
     </div>
 </section>
-  
-<!-- TEAM END -->
+
+
 
 <!-- bottom to top start here -->
 <a href="javascript:void(0);" id="rocketmeluncur" class="showrocket" ><i></i></a>
@@ -541,6 +555,8 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
+    <!-- contact-->
+    <script src="assets/js/contacts.js"></script>
 </body>
 
 </html>
