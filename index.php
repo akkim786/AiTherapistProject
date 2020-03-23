@@ -43,6 +43,10 @@
     <!-- Screenshots css --> 
     <link rel="stylesheet" type="text/css" href="assets\css\screenshot.css" />
 	<link rel="stylesheet" type="text/css" href="assets\css\jquery.hislide.min.css" />
+
+    <!--Animate On Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body{
             overflow:hidden;
@@ -271,9 +275,19 @@
     <section id="screenshot" >
     <div class ="row">
         <div class ="col-md-3"></div>
-        <div class ="col-md-6"><div class ="text-center"><h2><u>Screenshots</u></h2></div>
-    </div> 
-
+            <div class ="col-md-6">
+                <div class ="text-center"><h2><u>Screenshots</u></h2>
+                </div>
+            </div> 
+        </div>
+    </div>
+        <div class ="container-fluid">
+        <div class ="row">
+        <div class ="col-xs-12">
+        
+        </div>
+        </div>
+        </div>
     </section>
 
     <!--Screenshots end -->
@@ -286,10 +300,7 @@
         <div class ="col-md-3"></div>
         <div class ="col-md-6"><div class ="text-center"><h2><u>Pricing</u></h2></div>
     </div>
-
-     <!-- #### PRICING TABLE - BOOTSTRAP #### -->
-  
-     
+        </div><br><br>
      <!-- #### Bootstrap CSS #### -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -304,22 +315,7 @@
      <!-- #### JavaScript #### -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-   
- 
- <section class="bg-light text-center p-5" style ="background:transparent">
- 
        <div class="container-fluid">
-         
-         <!-- Tittle -->
-         <div class="row text-muted text-center">
-             <div class="col m-4">
-               <h1 class="mb-4 text-uppercase title"> Pricing Table - Boostrap - Background Image </h1>
-               
-             </div>
-         </div>
-         <!-- End of Tittle -->  
- 
- 
            <div class="row align-items-center">
  
              <div class="col-lg-4">
@@ -370,16 +366,9 @@
                      </div>
                    </div>
                  </div>
- 
            </div>
-           
        </div>
- 
-     </section>
-
-    </section>
-
-
+     </section><br><br>
     <!-- Pricing end -->
 
     <!--teastimonials -->
@@ -388,7 +377,7 @@
     <div class ="row">
         <div class ="col-md-3"></div>
         <div class ="col-md-6"><div class ="text-center"><h2><u>Testimonials</u></h2></div>
-    </div>
+    </div><br>
 				<div class="testimonial-section">
 					<div class="testi-user-img">
 					<div class="swiper-container gallery-thumbs">
