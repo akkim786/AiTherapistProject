@@ -5,8 +5,8 @@
 
 .card-1, .card-2, .card-3 {
     /* background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(https://images.pexels.com/photos/589840/pexels-photo-589840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center no-repeat /cover; */
-    box-shadow: 7px 18px 50px #555;
-    max-width: 400px;
+    box-shadow: 7px 18px 40px #555;
+    /* max-width: 400px;z    */
 }
 
 .card-1, .card-2, .card-3 {
