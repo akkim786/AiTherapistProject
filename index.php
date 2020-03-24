@@ -43,6 +43,16 @@
     <!-- Screenshots css --> 
     <link rel="stylesheet" type="text/css" href="assets\css\screenshot.css" />
 	<link rel="stylesheet" type="text/css" href="assets\css\jquery.hislide.min.css" />
+
+    <!--Slicebox-->
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/slicebox.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+	<script type="text/javascript" src="assets/js/modernizr.custom.46884.js"></script>
+
+    <!--Animate On Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body{
             overflow:hidden;
@@ -246,8 +256,8 @@
                 </div>
                 <div class="col-sm-6  text-center">
                     <div class="animation-box wow bounceIn animated">
-                        <img class="highlight-left wow animated" src="img/spark.png" height="192" width="48" alt=""> 
-                        <img class="highlight-right wow animated" src="img/spark.png" height="192" width="48" alt="">
+                        <!-- <img class="highlight-left wow animated" src="img/spark.png" height="192" width="48" alt=""> 
+                        <img class="highlight-right wow animated" src="img/spark.png" height="192" width="48" alt="">-->
                         <img class="screen" src="assets\img\iphone.png" alt="" height="600" width="500">
                     </div>
                 </div>
@@ -278,16 +288,68 @@
     <section id="screenshot" >
     <div class ="row">
         <div class ="col-md-3"></div>
-        <div class ="col-md-6"><div class ="text-center"><h2><u>Screenshots</u></h2></div>
-    </div> 
+            <div class ="col-md-6">
+                <div class ="text-center"><h2><u>Screenshots</u></h2>
+                </div>
+            </div> 
+        </div>
+    </div>
+        <div class ="container-fluid">
+        <div class ="row">
+            <div class ="col-md-3 col-xs-12"></div>
+        <div class ="col-md-6 col-xs-12">
+        <div class="wrapper1">
 
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<img src="images/screen-1.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Creative Lifesaver</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/screen-2.jpg" alt="image2"/></a>
+						<div class="sb-description">
+							<h3>Honest Entertainer</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/screen-3.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Brave Astronaut</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/01.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Affectionate Decision Maker</h3>
+						</div>
+					</li>
+					<li>
+						<img src="images/02.jpg" alt="image1"/></a>
+						<div class="sb-description">
+							<h3>Faithful Investor</h3>
+						</div>
+					</li>
+				</ul>
+
+				<div id="shadow" class="shadow"></div>
+
+				<div id="nav-arrows" class="nav-arrows">
+					<a href="#">Next</a>
+					<a href="#">Prev</a>
+				</div>
+
+        </div>
+        </div>
+        </div>
     </section>
 
     <!--Screenshots end -->
 
 
     <!-- Pricing start -->
-
+<br><br><br><br><br><br><br><br><br>
     <section id="pricing">
     <div class ="row">
         <div class ="col-md-3"></div>
@@ -365,12 +427,9 @@
                      </div>
                    </div>
                  </div>
- 
            </div>
-           
        </div>
- 
-     </section>
+     </section><br><br>
     <!-- Pricing end -->
 <br><br>
     <!--teastimonials -->
@@ -379,7 +438,7 @@
     <div class ="row">
         <div class ="col-md-3"></div>
         <div class ="col-md-6"><div class ="text-center"><h2><u>Testimonials</u></h2></div>
-    </div>
+    </div><br>
 				<div class="testimonial-section">
 					<div class="testi-user-img">
 					<div class="swiper-container gallery-thumbs">
@@ -553,6 +612,59 @@
     <script src="assets/js/main.js"></script>
     <!-- contact-->
     <script src="assets/js/contacts.js"></script>
+    <!--slicebox-->
+    <script type="text/javascript" src="assets/js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ).hide(),
+						$shadow = $( '#shadow' ).hide(),
+						slicebox = $( '#sb-slider' ).slicebox( {
+							onReady : function() {
+
+								$navArrows.show();
+								$shadow.show();
+
+							},
+							orientation : 'r',
+							cuboidsRandom : true,
+							disperseFactor : 30
+						} ),
+						
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slicebox.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':last' ).on( 'click', function() {
+								
+								slicebox.previous();
+								return false;
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			});
+		</script>
 </body>
 
 </html>

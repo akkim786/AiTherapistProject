@@ -58,26 +58,27 @@
             <div class="collapse navbar-collapse" id="appside_main_menu">
                 <ul class="navbar-nav">
                     <li class="current-menu-item">
-                        <a href="index.php">Home</a>
+                        <a href="index.php" style ="color:#000;">Home</a>
                     </li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#screenshot">Screenshot</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#about" style ="color:#000;">About</a></li>
+                    <li><a href="#features" style ="color:#000;">Features</a></li>
+                    <li><a href="#screenshot" style ="color:#000;">Screenshot</a></li>
+                    <li><a href="#pricing" style ="color:#000;">Pricing</a></li>
+                    <li><a href="#testimonial" style ="color:#000;">Testimonials</a></li>
                     <li class="menu-item-has-children">
-                        <a href="#">Extra</a>
+                        <a href="#" style ="color:#000;">Extra</a>
                         <ul class="sub-menu">
-                            <li><a href="support.php">Support</a></li>
-                            <li><a href="speciality.php">Speciality</a></li>
-                            <li><a href="team.php">Core Team</a></li>
+                            <li><a href="support.php" style ="color:#000;">Support</a></li>
+                            <li><a href="speciality.php" style ="color:#000;">Speciality</a></li>
+                            <li><a href="team.php" style ="color:#000;">Core Team</a></li>
                         </ul>
                     </li>
-                    <li><a href="login.php">Sign in</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.php" style ="color:#000;">Sign in</a></li>
+                    <li><a href="#contact" style ="color:#000;">Contact</a></li>
                 </ul>
             </div>
-</nav>
+</nav><br><br>
+<br><br>
     <!-- TEAM -->
 <section id ="team" class ="container-fluid">
     <div class ="row">
