@@ -29,9 +29,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- team css -->
-    <link rel="stylesheet" href="assets/team.css">
-    <!-- team css -->
+    <!-- testimonial css -->
     <link rel="stylesheet" href="assets/css/testimonial.css">
     <!-- pricing css -->
     <link rel="stylesheet" href="assets\css\pricing.css">
@@ -535,8 +533,6 @@
     <script src="assets/js/testimonial.js"></script>
     <!-- bottom to top jquery -->
     <script src="assets\js\bottom.js"></script>
-    <!-- team jquery -->
-    <script src="assets/js/team.js"></script>
     <!-- popper -->
     <script src="assets/js/popper.min.js"></script>
     <!-- bootstrap -->
