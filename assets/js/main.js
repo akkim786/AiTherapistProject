@@ -1,432 +1,259 @@
-(function ($) {
+/* ===================================================================
+ * Dazzle - Main JS
+ *
+ * ------------------------------------------------------------------- */ 
+
+(function($) {
+
 	"use strict";
-    jQuery(document).ready(function($){
-        /*------------------------------
-            counter section activation
-        -------------------------------*/
-        var counternumber = $('.count-num');
-        counternumber.counterUp({
-            delay: 20,
-            time: 3000
-        });
-        /*--------------------
-            wow js init
-        --------------------*/
-        new WOW().init();
-        /*----------------------------
-            portfolio menu active
-        ----------------------------*/
-        var portfolioMenu = '.portfolio-menu li';
-        $(document).on('click', portfolioMenu, function () {
-            $(this).siblings().removeClass('active');
-            $(this).addClass('active');
-        });
 
-        /*----------------------------------
-            magnific popup activation
-        ----------------------------------*/
-        $('.image-popup').magnificPopup({
-            type: 'image'
-        });
-        $('.video-play-btn,.play-video-btn').magnificPopup({
-            type: 'video'
-        });
-        /*-------------------------------
-            back to top
-        ------------------------------*/
-        $(document).on('click', '.back-to-top', function () {
-            $("html,body").animate({
-                scrollTop: 0
-            }, 2000);
-        });
-        /*------------------------------
-            smoth achor effect
-        ------------------------------*/
-        $(document).on('click','#appside_main_menu li a', function (e) {
-            var anchor = $(this).attr('href');
-            var link = anchor.slice(0,1);
-            if ('#' == link) {
-                e.preventDefault();
-                var top = $(anchor).offset().top;
-                $('html, body').animate({
-                    scrollTop: $(anchor).offset().top
-                }, 1000);
-                $(this).parent().addClass('active').siblings().removeClass('active');
-            }
-           
-        });
-        
-        
-       /*----------------------------------------
-            screenshort carousel
-        ----------------------------------------*/
-        var $brandCarousel = $('.brand-carousel');
-        if ($brandCarousel.length > 0) {
-            $brandCarousel.owlCarousel({
-                loop: true,
-                autoplay: true, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 30,
-                dots: false,
-                nav: true,
-                smartSpeed:3000,
-                navText:['',''],
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    360: {
-                        items: 2,
-                        nav: false
-                    },
-                    767: {
-                        items: 2,
-                        nav: false
-                    },
-                    768: {
-                        items: 2,
-                        nav: false
-                    },
-                    960: {
-                        items: 3,
-                        nav:false
-                    },
-                    1200: {
-                        items: 4
-                    },
-                    1920: {
-                        items: 5
-                    }
-                }
-            });
-        }
-        /*----------------------------------------
-            screenshort carousel
-        ----------------------------------------*/
-        var $screenshortCarouselTwo = $('.screenshort-carousel-02');
-        if ($screenshortCarouselTwo.length > 0) {
-            $screenshortCarouselTwo.owlCarousel({
-                loop: true,
-                autoplay: true, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 30,
-                dots: false,
-                nav: true,
-                smartSpeed:3000,
-                navText:['',''],
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    414: {
-                        items: 2,
-                        nav: false
-                    },
-                    767: {
-                        items: 2,
-                        nav: false
-                    },
-                    768: {
-                        items: 2,
-                        nav: false
-                    },
-                    960: {
-                        items: 3,
-                        nav:false
-                    },
-                    1200: {
-                        items: 4
-                    },
-                    1920: {
-                        items: 3
-                    }
-                }
-            });
-        }
-        /*----------------------------------------
-            screenshort carousel
-        ----------------------------------------*/
-        var $screenshortCarousel = $('.screenshort-carousel');
-        if ($screenshortCarousel.length > 0) {
-            $screenshortCarousel.owlCarousel({
-                loop: true,
-                autoplay: true, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 30,
-                dots: false,
-                nav: true,
-                smartSpeed:3000,
-                navText:['',''],
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    767: {
-                        items: 2,
-                        nav: false
-                    },
-                    768: {
-                        items: 2,
-                        nav: false
-                    },
-                    960: {
-                        items: 3,
-                        nav:false
-                    },
-                    1200: {
-                        items: 4
-                    },
-                    1920: {
-                        items: 4
-                    }
-                }
-            });
-        }
-        /*----------------------------------------
-            testimonial carousel
-        ----------------------------------------*/
-        var $testimonialCarousel = $('.testimonial-carousel');
-        if ($testimonialCarousel.length > 0) {
-            $testimonialCarousel.owlCarousel({
-                loop: true,
-                autoplay: true, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 30,
-                dots: true,
-                nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    767: {
-                        items: 1,
-                        nav: false
-                    },
-                    768: {
-                        items: 1,
-                        nav: false
-                    },
-                    960: {
-                        items: 1,
-                        nav:false
-                    },
-                    1200: {
-                        items: 1
-                    },
-                    1920: {
-                        items: 1
-                    }
-                }
-            });
-        }
-        /*----------------------------------------
-            testimonialtwo carousel
-        ----------------------------------------*/
-        var $testimonialCarouselTwo = $('.testimonial-carousel-02');
-        if ($testimonialCarouselTwo.length > 0) {
-            $testimonialCarouselTwo.owlCarousel({
-                loop: true,
-                autoplay: false, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 60,
-                dots: true,
-                nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
-                center: true,
-                stagePadding:100,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false,
-                        center:false,
-                        stagePadding:10
-                    },
-                    414: {
-                        items: 1,
-                        nav: false,
-                        center:false,
-                        stagePadding:10
-                    },
-                    767: {
-                        items: 1,
-                        nav: false,
-                        center:false,
-                        stagePadding:10
-                    },
-                    768: {
-                        items: 1,
-                        nav: false
-                    },
-                    960: {
-                        items: 1,
-                        nav:false,
-                        center:false
-                    },
-                    1200: {
-                        items: 2,
-                        nav:false,
-                        center:false,
-                        stagePadding:10
-                    },
-                    1920: {
-                        items: 2
-                    }
-                }
-            });
-        }
-        /*----------------------------------------
-            testimonialtwo carousel
-        ----------------------------------------*/
-        var $testimonialCarouselThree = $('.testimonial-carousel-03');
-        if ($testimonialCarouselThree.length > 0) {
-            $testimonialCarouselThree.owlCarousel({
-                loop: true,
-                autoplay: false, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 30,
-                dots: true,
-                nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    767: {
-                        items: 1,
-                        nav: false
-                    },
-                    768: {
-                        items: 1,
-                        nav: false
-                    },
-                    960: {
-                        items: 2,
-                        nav:false,
-                    },
-                    1200: {
-                        items: 3
-                    },
-                    1920: {
-                        items: 3
-                    }
-                }
-            });
-        }
-        /*----------------------------------------
-            Team carousel
-        ----------------------------------------*/
-        var $teamCarousel = $('.team-carousel');
-        if ($teamCarousel.length > 0) {
-            $teamCarousel.owlCarousel({
-                loop: true,
-                autoplay: true, //true if you want enable autoplay
-                autoPlayTimeout: 1000,
-                margin: 30,
-                dots: true,
-                nav: true,
-                smartSpeed:3000,
-                animateIn:'fadeIn',
-                animateOut:"fadeOut",
-                navText:['',''],
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    414: {
-                        items: 1,
-                        nav: false
-                    },
-                    520: {
-                        items: 2,
-                        nav: false
-                    },
-                    767: {
-                        items: 2,
-                        nav: false
-                    },
-                    768: {
-                        items: 2,
-                        nav: false
-                    },
-                    960: {
-                        items: 3,
-                        nav:false
-                    },
-                    1200: {
-                        items: 4
-                    },
-                    1920: {
-                        items: 4
-                    }
-                }
-            });
-        }
-        
-     
-    });
+	var cfg = {		
+		scrollDuration : 800, // smoothscroll duration
+		mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'  // mailchimp url
+	},	
 
-    
-    //define variable for store last scrolltop
-    var lastScrollTop = '';
-    $(window).on('scroll', function () {
-        /*---------------------------
-            back to top show / hide
-        ---------------------------*/
-       var ScrollTop = $('.back-to-top');
-       if ($(window).scrollTop() > 1000) {
-           ScrollTop.fadeIn(1000);
-       } else {
-           ScrollTop.fadeOut(1000);
-       }
-       /*--------------------------
-        sticky menu activation
-       ---------------------------*/
-        var st = $(this).scrollTop();
-        var mainMenuTop = $('.navbar-area');
-        if ($(window).scrollTop() > 1000) {
-            if (st > lastScrollTop) {
-                // hide sticky menu on scrolldown 
-                mainMenuTop.removeClass('nav-fixed');
-                
-            } else {
-                // active sticky menu on scrollup 
-                mainMenuTop.addClass('nav-fixed');
-            }
+	$WIN = $(window);	
 
-        } else {
-            mainMenuTop.removeClass('nav-fixed ');
-        }
-        lastScrollTop = st;
-       
-    });
-           
-    $(window).on('load',function(){
-        /*-----------------------------
-            preloader
-        -----------------------------*/
-        var preLoder = $("#preloader");
-        preLoder.fadeOut(1000);
-        /*-----------------------------
-            back to top
-        -----------------------------*/
-        var backtoTop = $('.back-to-top')
-        backtoTop.fadeOut(100);
-    });
+   // Add the User Agent to the <html>
+   // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
+	var doc = document.documentElement;
+	doc.setAttribute('data-useragent', navigator.userAgent);
 
-}(jQuery));	
+	
+	/* Preloader 
+	 * -------------------------------------------------- */
+	var ssPreloader = function() {
+
+		$WIN.on('load', function() {	
+
+			// force page scroll position to top at page refresh
+			$('html, body').animate({ scrollTop: 0 }, 'normal');
+
+         // will fade out the whole preloader DIV that covers the website.
+	      $("#preloader").delay(500).fadeOut('slow');
+	  
+	  	});
+	};
+
+
+	/* Mobile Menu
+	 * ---------------------------------------------------- */ 
+	var ssMobileMenu = function() {
+
+  		var toggleButton = $('.header-menu-toggle'),
+          nav = $('#header-nav-wrap');
+
+		toggleButton.on('click', function(event){
+			event.preventDefault();
+
+			toggleButton.toggleClass('is-clicked');
+			nav.slideToggle();
+		});
+
+		if (toggleButton.is(':visible')) nav.addClass('mobile');
+
+		$(window).resize(function() {
+			if (toggleButton.is(':visible')) nav.addClass('mobile');
+			else nav.removeClass('mobile');
+		});
+
+		$('#header-nav-wrap').find('a').on("click", function() {  
+
+			if (nav.hasClass('mobile')) {   		
+				toggleButton.toggleClass('is-clicked'); 
+				nav.slideToggle();   		
+			}     
+		});
+
+	}; 
+
+
+	/* FitVids
+	 * ---------------------------------------------------- */
+	var ssFitVids = function() {
+		$(".fluid-video-wrapper").fitVids();
+	}; 
+
+
+
+  /* Owl Carousel
+	* ------------------------------------------------------ */
+	var ssOwlCarousel = function() {
+
+		$(".owl-carousel").owlCarousel({	
+	      loop: true,
+  			nav: false,
+			autoHeight: true,
+  			items: 1
+		});
+
+	};  	
+
+
+  /* Highlight the current section in the navigation bar
+	* ------------------------------------------------------ */
+	var ssWaypoints = function() {
+
+		var sections = $("section"),
+		navigation_links = $(".header-main-nav li a");	
+
+		sections.waypoint( {
+
+	       handler: function(direction) {
+
+			   var active_section;
+
+				active_section = $('section#' + this.element.id);
+
+				if (direction === "up") active_section = active_section.prev();
+
+				var active_link = $('.header-main-nav li a[href="#' + active_section.attr("id") + '"]');			
+
+	         navigation_links.parent().removeClass("current");
+				active_link.parent().addClass("current");
+
+			}, 
+
+			offset: '25%'
+
+		});
+	};
+
+
+  /* Smooth Scrolling
+	* ------------------------------------------------------ */
+	var ssSmoothScroll = function() {
+
+		$('.smoothscroll').on('click', function (e) {
+			var target = this.hash,
+			$target    = $(target);
+	 	
+		 	e.preventDefault();
+		 	e.stopPropagation();	  
+
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, cfg.scrollDuration, 'swing', function () {
+				window.location.hash = target;
+			});
+
+	  	});
+
+	};
+
+
+
+  /* Placeholder Plugin Settings
+	* ------------------------------------------------------ */
+	var ssPlaceholder = function() {
+		$('input, textarea, select').placeholder();  
+	};
+
+
+
+  	/* Alert Boxes
+  	------------------------------------------------------- */
+  	var ssAlertBoxes = function() {
+
+  		$('.alert-box').on('click', '.close', function() {
+		  $(this).parent().fadeOut(500);
+		}); 
+
+  	};	  	
+	
+
+
+  /* Animate On Scroll
+  	* ------------------------------------------------------ */
+	var ssAOS = function() {
+
+		AOS.init( {
+      	offset: 200,
+      	duration: 600,
+      	easing: 'ease-in-sine',
+      	delay: 300,
+			once: true,
+			disable: 'mobile'
+    	});
+
+	};
+
+
+  /* AjaxChimp
+	* ------------------------------------------------------ */
+	var ssAjaxChimp = function() {
+
+		$('#mc-form').ajaxChimp({
+			language: 'es',
+		   url: cfg.mailChimpURL
+		});
+
+		// Mailchimp translation
+		//
+		//  Defaults:
+		//	 'submit': 'Submitting...',
+		//  0: 'We have sent you a confirmation email',
+		//  1: 'Please enter a value',
+		//  2: 'An email address must contain a single @',
+		//  3: 'The domain portion of the email address is invalid (the portion after the @: )',
+		//  4: 'The username portion of the email address is invalid (the portion before the @: )',
+		//  5: 'This email address looks fake or invalid. Please enter a real email address'
+
+		$.ajaxChimp.translations.es = {
+		  'submit': 'Submitting...',
+		  0: '<i class="fa fa-check"></i> We have sent you a confirmation email',
+		  1: '<i class="fa fa-warning"></i> You must enter a valid e-mail address.',
+		  2: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+		  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+		  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
+		  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
+		} 
+
+	};
+
+
+ 
+  /* Back to Top
+	* ------------------------------------------------------ */
+	var ssBackToTop = function() {
+
+		var pxShow  = 500,         // height on which the button will show
+		fadeInTime  = 400,         // how slow/fast you want the button to show
+		fadeOutTime = 400,         // how slow/fast you want the button to hide
+		scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+		goTopButton = $("#go-top")
+
+		// Show or hide the sticky footer button
+		$(window).on('scroll', function() {
+			if ($(window).scrollTop() >= pxShow) {
+				goTopButton.fadeIn(fadeInTime);
+			} else {
+				goTopButton.fadeOut(fadeOutTime);
+			}
+		});
+	};	
+
+  
+   /* Initialize
+	* ------------------------------------------------------ */
+	(function ssInit() {
+
+		ssPreloader();
+		ssMobileMenu();
+		ssFitVids();
+		ssOwlCarousel();
+		ssWaypoints();
+		ssSmoothScroll();
+		ssPlaceholder();
+		ssAlertBoxes();
+		ssAOS();
+		ssBackToTop();
+
+		// to use the mailchimp form, uncomment the 
+		// function call ssAjaxChimp() below:
+		// ssAjaxChimp(); 
+
+	})();
+ 
+
+})(jQuery);

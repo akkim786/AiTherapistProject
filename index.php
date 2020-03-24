@@ -42,8 +42,9 @@
     <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
     <!-- Screenshots css --> 
     <link rel="stylesheet" type="text/css" href="assets\css\screenshot.css" />
-	<link rel="stylesheet" type="text/css" href="assets\css\jquery.hislide.min.css" />
-
+    <link rel="stylesheet" type="text/css" href="assets\css\jquery.hislide.min.css" />
+    <!-- how d app css -->
+   <link rel="stylesheet" href="assets\css\base.css">
     <!--Slicebox-->
     <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/slicebox.css" />
@@ -172,6 +173,45 @@
         </div>
     </section>
     <!-- ***** Special Area End ***** -->
+
+
+     <!-- ***** how the app  ***** -->
+    <div class="row about-how">
+          
+            <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>           
+
+            <div class="about-how-content" data-aos="fade-up">
+                <div class="about-how-steps block-1-2 block-tab-full group">
+
+                    <div class="bgrid step" data-item="1">
+                        <h3>Sign-Up</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        </p> 
+                    </div>
+
+                    <div class="bgrid step" data-item="2">
+                        <h3>Upload</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        </p> 
+                    </div>               
+               
+                    <div class="bgrid step" data-item="3">
+                        <h3>Create</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        </p> 
+                    </div>
+
+                    <div class="bgrid step" data-item="4">
+                        <h3>Publish</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                        </p> 
+                    </div>  
+
+                </div>           
+           </div> <!-- end about-how-content -->
+
+        </div> <!-- end about-how -->
+    </div>
 
 
 
@@ -612,6 +652,9 @@
     <script src="assets/js/main.js"></script>
     <!-- contact-->
     <script src="assets/js/contacts.js"></script>
+      <!-- how the app js -->
+    <script src="assets\js\jquery-2.1.3.min.js"></script>
+    <script src="assets\js\plugins.js"></script>
     <!--slicebox-->
     <script type="text/javascript" src="assets/js/jquery.slicebox.js"></script>
     <script type="text/javascript">
