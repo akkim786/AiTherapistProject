@@ -43,8 +43,6 @@
     <!-- Screenshots css --> 
     <link rel="stylesheet" type="text/css" href="assets\css\screenshot.css" />
     <link rel="stylesheet" type="text/css" href="assets\css\jquery.hislide.min.css" />
-    <!-- how d app css -->
-   <link rel="stylesheet" href="assets\css\base.css">
     <!--Slicebox-->
     <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/slicebox.css" />
@@ -177,7 +175,7 @@
 
      <!-- ***** how the app  ***** -->
     <div class="row about-how">
-          
+          <h6>hello</h6>
             <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>           
 
             <div class="about-how-content" data-aos="fade-up">
@@ -652,9 +650,6 @@
     <script src="assets/js/main.js"></script>
     <!-- contact-->
     <script src="assets/js/contacts.js"></script>
-      <!-- how the app js -->
-    <script src="assets\js\jquery-2.1.3.min.js"></script>
-    <script src="assets\js\plugins.js"></script>
     <!--slicebox-->
     <script type="text/javascript" src="assets/js/jquery.slicebox.js"></script>
     <script type="text/javascript">
