@@ -306,31 +306,31 @@
 					<li>
 						<img src="images/screen-1.jpg" alt="image1"/></a>
 						<div class="sb-description">
-							<h3>Creative Lifesaver</h3>
+							<h3>Screen 1</h3>
 						</div>
 					</li>
 					<li>
 						<img src="images/screen-2.jpg" alt="image2"/></a>
 						<div class="sb-description">
-							<h3>Honest Entertainer</h3>
+							<h3>Screen 2</h3>
 						</div>
 					</li>
 					<li>
 						<img src="images/screen-3.jpg" alt="image1"/></a>
 						<div class="sb-description">
-							<h3>Brave Astronaut</h3>
+							<h3>Screen 3</h3>
 						</div>
 					</li>
 					<li>
 						<img src="images/01.jpg" alt="image1"/></a>
 						<div class="sb-description">
-							<h3>Affectionate Decision Maker</h3>
+							<h3>Screen 4</h3>
 						</div>
 					</li>
 					<li>
 						<img src="images/02.jpg" alt="image1"/></a>
 						<div class="sb-description">
-							<h3>Faithful Investor</h3>
+							<h3>Screen 5</h3>
 						</div>
 					</li>
 				</ul>
