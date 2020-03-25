@@ -48,8 +48,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/slicebox.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
 	<script type="text/javascript" src="assets/js/modernizr.custom.46884.js"></script>
-
-    <!--Animate On Scroll-->
+    <!--About-->
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
+    <!--Animate on scroll-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
@@ -102,16 +103,16 @@
             <div class="shape-1"><img src="assets/img/shape/01.png" alt=""></div>
             <div class="shape-2"><img src="assets/img/shape/02.png" alt=""></div>
             <div class="shape-3"><img src="assets/img/shape/03.png" alt=""></div>
-        <div class="header-right-image wow zoomIn">
+        <div class="header-right-image" data-aos="zoom-in">
             <img src="assets/img/mobile-image-4.png" alt="header right image">
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="header-inner">
-                        <h1 class="title wow fadeInDown">Make cool landing with appside</h1>
+                       <div data-aos="zoom-in" > <h1 class="title wow fadeInDown">Make cool landing with appside</h1></div>
                         <p>Appside is the best app landing page which will help you showcase your business, lifestyle, social, or shopping app in the best possible manner.</p>
-                        <div class="btn-wrapper wow fadeInUp">
+                        <div class="btn-wrapper"  data-aos="zoom-in-up">
                             <a href="#" class="boxed-btn btn-rounded">Download now</a>
                             <a href="#" class="boxed-btn btn-rounded blank">Learn More</a>
                         </div>
@@ -138,7 +139,7 @@
             <div class="row">
                 <!-- Single Special Area -->
                 <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="single-special text-center" data-aos="zoom-in-up">
                         <div class="single-icon">
                             <i class="fa fa-mobile" aria-hidden="true"></i>
                         </div>
@@ -148,7 +149,7 @@
                 </div>
                 <!-- Single Special Area -->
                 <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="single-special text-center" data-aos="zoom-in-up">
                         <div class="single-icon">
                             <i class="fa fa-pencil-ruler" aria-hidden="true"></i>
                         </div>
@@ -158,7 +159,7 @@
                 </div>
                 <!-- Single Special Area -->
                 <div class="col-12 col-md-4">
-                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="single-special text-center"data-aos="zoom-in-up">
                         <div class="single-icon">
                             <i class="fa fa-cog" aria-hidden="true"></i>
                         </div>
@@ -170,55 +171,65 @@
         </div>
         </div>
     </section>
-    <!-- ***** Special Area End ***** -->
-
-
-     <!-- ***** how the app  ***** -->
-    <div class="row about-how">
-          <h6>hello</h6>
-            <h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>           
-
-            <div class="about-how-content" data-aos="fade-up">
-                <div class="about-how-steps block-1-2 block-tab-full group">
-
-                    <div class="bgrid step" data-item="1">
-                        <h3>Sign-Up</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
-                    </div>
-
-                    <div class="bgrid step" data-item="2">
-                        <h3>Upload</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
-                    </div>               
-               
-                    <div class="bgrid step" data-item="3">
-                        <h3>Create</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
-                    </div>
-
-                    <div class="bgrid step" data-item="4">
-                        <h3>Publish</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                        </p> 
-                    </div>  
-
-                </div>           
-           </div> <!-- end about-how-content -->
-
-        </div> <!-- end about-how -->
+<section id ="about">
+    <div class ="container">
+        <div class ="row">
+            <div class ="col-md-4"></div>
+            <div class ="col-md-7"><h1>How Our Apps Works</h1></div>
     </div>
-
-
+    </div><br><br>
+<div class ="container">
+    <div class ="row">
+        <div class ="col-md-6">
+            <div class ="abt-box" data-aos="fade-up">
+                <span id ="abt_1">1</span>
+                <div class ="abt_cont bg-light">
+                <span id="abt_name_1">Sign-Up</span><br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sitvoluptateaccusantium  doloremque laudantium, totam rem aperiam, eaqueipsquae ab illo inventore veritatis et quasi architecto beatae vitadictasunt explicabo. 
+                </p> 
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-6">
+            <div class ="abt-box" data-aos="fade-up">
+                <span id ="abt_1">2</span>
+                <div class ="abt_cont bg-light">
+                <span id="abt_name_1">Upload</span><br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sitvoluptateaccusantium  doloremque laudantium, totam rem aperiam, eaqueipsquae ab illo inventore veritatis et quasi architecto beatae vitadictasunt explicabo. 
+                </p> 
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-6">
+            <div class ="abt-box" data-aos="fade-down">
+                <span id ="abt_1">3</span>
+                <div class ="abt_cont bg-light">
+                <span id="abt_name_1">Create</span><br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sitvoluptateaccusantium  doloremque laudantium, totam rem aperiam, eaqueipsquae ab illo inventore veritatis et quasi architecto beatae vitadictasunt explicabo. 
+                </p> 
+                </div>
+            </div>
+        </div>
+        <div class ="col-md-6">
+            <div class ="abt-box" data-aos="fade-down">
+                <span id ="abt_1">4</span>
+                <div class ="abt_cont bg-light">
+                <span id="abt_name_1">Update</span><br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sitvoluptateaccusantium  doloremque laudantium, totam rem aperiam, eaqueipsquae ab illo inventore veritatis et quasi architecto beatae vitadictasunt explicabo. 
+                </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
     <!-- counterup area start -->
 <section class="counterup-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
-                <div class="single-counter-item"><!-- single counter item -->
+                <div class="single-counter-item" data-aos="zoom-in-left"><!-- single counter item -->
                     <div class="icon">
                         <i class="flaticon-rating"></i>
                     </div>
@@ -229,7 +240,7 @@
                 </div><!-- //. single counter item -->
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="single-counter-item"><!-- single counter item -->
+                <div class="single-counter-item" data-aos="zoom-in"><!-- single counter item -->
                     <div class="icon">
                         <i class="flaticon-conversation-1"></i>
                     </div>
@@ -240,7 +251,7 @@
                 </div><!-- //. single counter item -->
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="single-counter-item"><!-- single counter item -->
+                <div class="single-counter-item" data-aos="zoom-in"><!-- single counter item -->
                     <div class="icon">
                         <i class="flaticon-email"></i>
                     </div>
@@ -251,7 +262,7 @@
                 </div><!-- //. single counter item -->
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="single-counter-item"><!-- single counter item -->
+                <div class="single-counter-item" data-aos="zoom-in-right"><!-- single counter item -->
                     <div class="icon">
                         <i class="flaticon-trophy"></i>
                     </div>
@@ -265,9 +276,6 @@
     </div>
 </section>
 <!-- counterup area end -->
-
-
-    <!-- HHHHHHHHHHHHHHHHHH        feature         HHHHHHHHHHHHHHHH -->
     <section id="features" class="img-block-3col wrapper">
         <div class ="row">
             <div class ="col-md-3"></div>
@@ -278,40 +286,38 @@
             <div class="row">
                 <div class="col-sm-3">
                     <ul class="item-list-right item-list-big">
-                        <li class="wow fadeInLeft animated"> <i class="fa fa-film"></i> 
+                        <li> <div data-aos="fade-right"><i class="fa fa-film"></i> 
                             <h3>Responsive design</h3>
-                            <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted.</p>
+                            <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted.</p></div>
                         </li>
-                        <li class="wow fadeInLeft animated"> <i class="fa fa-bolt"></i> 
+                        <li> <div data-aos="fade-right"><i class="fa fa-bolt"></i> 
                             <h3>6 Color schemes</h3>
-                            <p>The set of ready made CSS files with different color schemes will help you in quick landing’s adaptation according to your benchmark style.</p>
+                            <p>The set of ready made CSS files with different color schemes will help you in quick landing’s adaptation according to your benchmark style.</p></div>
                         </li>
-                        <li class="wow fadeInLeft animated"> <i class="fa fa-heart"></i> 
+                        <li> <div data-aos="fade-right"><i class="fa fa-heart"></i> 
                             <h3>PSD Is Included </h3>
-                            <p>The graphic source file in PSD format is included in the archive.</p>
+                            <p>The graphic source file in PSD format is included in the archive.</p></div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-6  text-center">
-                    <div class="animation-box wow bounceIn animated">
-                        <!-- <img class="highlight-left wow animated" src="img/spark.png" height="192" width="48" alt=""> 
-                        <img class="highlight-right wow animated" src="img/spark.png" height="192" width="48" alt="">-->
+                    <div class="animation-box"data-aos="zoom-in">
                         <img class="screen" src="assets\img\iphone.png" alt="" height="600" width="500">
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <ul class="item-list-left item-list-big">
-                        <li class="wow fadeInRight animated"> <i class="fa fa-life-ring"></i>
+                        <li> <div data-aos="fade-left"><i class="fa fa-life-ring"></i>
                             <h3>Well Documentation</h3>
-                            <p>LUCY is shipped with well documented moduler codes. Meaningfull Comments in code will help you to customize it easily.</p>
+                            <p>LUCY is shipped with well documented moduler codes. Meaningfull Comments in code will help you to customize it easily.</p></div>
                         </li>
-                        <li class="wow fadeInRight animated"> <i class="fa fa-lock"></i>
+                        <li> <div data-aos="fade-left"><i class="fa fa-lock"></i>
                             <h3>Easily Customizable</h3>
-                            <p>LUCY is easy to customize. No heavy coding is required to customize it with your real contents.</p>
+                            <p>LUCY is easy to customize. No heavy coding is required to customize it with your real contents.</p></div>
                         </li>
-                        <li class="wow fadeInRight animated"> <i class="fa fa-star"></i>
+                        <li> <div data-aos="fade-left"><i class="fa fa-star"></i>
                             <h3>Future Support</h3>
-                            <p>We will update LUCY and fix bugs if you found one for a long time.</p>
+                            <p>We will update LUCY and fix bugs if you found one for a long time.</p></div>
                         </li>
                     </ul>
                 </div>
@@ -394,10 +400,7 @@
         <div class ="col-md-6"><div class ="text-center"><h2><u>Pricing</u></h2></div>
     </div>
     </div><br>
-     <!-- #### PRICING TABLE - BOOTSTRAP #### -->
-  
-     
-     <!-- #### Bootstrap CSS #### -->
+   
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
      
@@ -418,7 +421,7 @@
            <div class="row align-items-center">
      
              <div class="col-lg-4">
-               <div class="card card-1 text-light py-4 my-4 mx-auto">
+               <div class="card card-1 text-light py-4 my-4 mx-auto" data-aos="fade-left">
                  <div class="card-body">
                    <h5 class="text-uppercase font-weight-bold mb-5"> Monthly Membership </h5>
                    <h1 class="text-uppercase price"> € 19 </h1>
@@ -434,7 +437,7 @@
              </div>
  
              <div class="col-lg-4">
-                 <div class="card card-2 text-light py-4 my-4 mx-auto">
+                 <div class="card card-2 text-light py-4 my-4 mx-auto" data-aos="fade-up">
                    <div class="card-body">
                      <h5 class="text-uppercase font-weight-bold mb-5"> Unlimited Access </h5>
                      <h1 class="text-uppercase price"> € 499 </h1>
@@ -451,7 +454,7 @@
                </div>
  
                <div class="col-lg-4">
-                   <div class="card card-3 text-light py-4 my-4 mx-auto">
+                   <div class="card card-3 text-light py-4 my-4 mx-auto" data-aos="fade-right">
                      <div class="card-body">
                        <h5 class="text-uppercase font-weight-bold mb-5"> Annual Membership </h5>
                        <h1 class="text-uppercase price"> € 119 </h1>
@@ -702,7 +705,15 @@
 				Page.init();
 
 			});
-		</script>
+        </script>
+            <script type="text/javascript">
+     AOS.init({
+        duration:800,
+     }
+        );
+</script>
+        
+   
 </body>
 
 </html>
