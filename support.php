@@ -76,20 +76,177 @@
 </nav><br><br>
 <br><br>
 
+<!-- Support -->
+
+        <!-- Supports -->
+        <div id="support" class="section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-xs-12">
+                        <div class="section-header text-center">
+                            <h3 class="section-title">Supports</h3>
+                            <p class="section-subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ut aliquip</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="support-tabs">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation"><a href="#installation" aria-controls="installation" role="tab" data-toggle="tab"><span class="icon-clipboard"></span>Installation<br/>Guide</a></li>
+                            <li role="presentation"><a href="#video-docs" aria-controls="video-docs" role="tab" data-toggle="tab"><span class="icon-video"></span>Video<br/>Documentation</a></li>
+                            <li role="presentation" class="active"><a href="#general-faq" aria-controls="general-faq" role="tab" data-toggle="tab"><span class="icon-quote"></span>General<br/>FAQ</a></li>
+                            <li role="presentation"><a href="#some-secret-01" aria-controls="some-secret-01" role="tab" data-toggle="tab"><span class="icon-hourglass"></span>Some<br/>Secrets 01</a></li>
+                            <li role="presentation"><a href="#some-secret-02" aria-controls="some-secret-02" role="tab" data-toggle="tab"><span class="icon-target"></span>Some<br/>Secrets 02</a></li>
+                            <li role="presentation"><a href="#some-secret-03" aria-controls="some-secret-03" role="tab" data-toggle="tab"><span class="icon-target"></span>Some<br/>Secrets 03</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade" id="installation">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="video-docs">
+                                <div class="pane-content">
+                                    <div class="row">
+                                        <div class="col-sm-6 xs-bottom-30">
+                                            <div class="plyr-video">
+                                                <div data-type="youtube" data-video-id="xODCdqTWzRo"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="plyr-video">
+                                                <div data-type="youtube" data-video-id="u_ft2nVi6_g"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade in active" id="general-faq">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="some-secret-01">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="some-secret-02">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="some-secret-03">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">1. How can I download from app store?</p>
+                                            <p class="step-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Supports End -->
+
+<!-- End Support -->
+
+
 <!-- jquery -->
 <script src="assets/js/jquery.js"></script>
-    <!-- popper -->
-    <script src="assets/js/popper.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
     <!-- magnific popup -->
     <script src="assets/js/jquery.magnific-popup.js"></script>
-    <!-- wow js-->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- way points js-->
-    <script src="assets/js/waypoints.min.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
 </body>
