@@ -33,6 +33,87 @@
         body{
             overflow:hidden;
         }
+
+        .support-tabs .nav-tabs {
+  border: none;
+}
+.support-tabs .nav-tabs > li {
+  margin-bottom: 0;
+  width: 16.666666%;
+  padding: 0 15px;
+}
+.support-tabs .nav-tabs > li > a {
+  border: 1px solid #c0392b;
+  border-radius: 0;
+  margin: 0;
+  text-align: center;
+  color: #000000;
+  display: block;
+  line-height: 1.75;
+  padding: 37px 10px 28px;
+  position: relative;
+}
+.support-tabs .nav-tabs > li > a span {
+  font-size: 4rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: 7px;
+}
+.support-tabs .nav-tabs > li > a:hover {
+  background-color: transparent;
+  color: #c0392b;
+}
+.support-tabs .nav-tabs > li > a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13px solid #c0392b;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -13px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.support-tabs .nav-tabs > li.active a {
+  background-color: #c0392b;
+  color: #ffffff;
+}
+.support-tabs .nav-tabs > li.active a:after {
+  opacity: 1;
+  visibility: visible;
+}
+.support-tabs .pane-content {
+  padding: 65px 15px 0;
+  width: 100%;
+  float: left;
+}
+.support-tabs .installation-steps {
+  float: left;
+  width: 100%;
+  margin-bottom: -45px;
+}
+.support-tabs .installation-step {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding-right: 15px;
+  margin-bottom: 45px;
+}
+.support-tabs .installation-step:nth-child(2n) {
+  padding-right: 0;
+  padding-left: 15px;
+}
+.support-tabs .installation-step .step-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
     </style>
     <title>Support</title>
 </head>
@@ -81,8 +162,8 @@
         <!-- Supports -->
         <div id="support" class="section section-padding">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-xs-12">
+                <div class="row text-center">
+                    <div class="col-md-12">
                         <div class="section-header text-center">
                             <h3 class="section-title">Supports</h3>
                             <p class="section-subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ut aliquip</p>
@@ -93,18 +174,18 @@
                     <div class="support-tabs">
 
                         <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation"><a href="#installation" aria-controls="installation" role="tab" data-toggle="tab"><span class="icon-clipboard"></span>Installation<br/>Guide</a></li>
-                            <li role="presentation"><a href="#video-docs" aria-controls="video-docs" role="tab" data-toggle="tab"><span class="icon-video"></span>Video<br/>Documentation</a></li>
-                            <li role="presentation" class="active"><a href="#general-faq" aria-controls="general-faq" role="tab" data-toggle="tab"><span class="icon-quote"></span>General<br/>FAQ</a></li>
-                            <li role="presentation"><a href="#some-secret-01" aria-controls="some-secret-01" role="tab" data-toggle="tab"><span class="icon-hourglass"></span>Some<br/>Secrets 01</a></li>
-                            <li role="presentation"><a href="#some-secret-02" aria-controls="some-secret-02" role="tab" data-toggle="tab"><span class="icon-target"></span>Some<br/>Secrets 02</a></li>
-                            <li role="presentation"><a href="#some-secret-03" aria-controls="some-secret-03" role="tab" data-toggle="tab"><span class="icon-target"></span>Some<br/>Secrets 03</a></li>
+                        <ul class="nav nav-tabs text-center" role="tablist">
+                            <li role="presentation" id="tab1" class ="active"><a href="#installation" aria-controls="installation" role="tab" data-toggle="tab"><span class="icon-clipboard"></span>Installation<br/>Guide</a></li>
+                            <li role="presentation" id="tab2" ><a href="#video-docs" aria-controls="video-docs" role="tab" data-toggle="tab"><span class="icon-video"></span>Video<br/>Documentation</a></li>
+                            <li role="presentation" id="tab3" ><a href="#general-faq" aria-controls="general-faq" role="tab" data-toggle="tab"><span class="icon-quote"></span>General<br/>FAQ</a></li>
+                            <li role="presentation" id="tab4" ><a href="#some-secret-01" aria-controls="some-secret-01" role="tab" data-toggle="tab"><span class="icon-hourglass"></span>Some<br/>Secrets 01</a></li>
+                            <li role="presentation" id="tab5" ><a href="#some-secret-02" aria-controls="some-secret-02" role="tab" data-toggle="tab"><span class="icon-target"></span>Some<br/>Secrets 02</a></li>
+                            <li role="presentation" id="tab6" ><a href="#some-secret-03" aria-controls="some-secret-03" role="tab" data-toggle="tab"><span class="icon-target"></span>Some<br/>Secrets 03</a></li>
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade" id="installation">
+                            <div role="tabpanel" class="tab-pane fade active show" id="installation">
                                 <div class="pane-content">
                                     <div class="installation-steps">
                                         <div class="installation-step">
@@ -131,18 +212,18 @@
                                     <div class="row">
                                         <div class="col-sm-6 xs-bottom-30">
                                             <div class="plyr-video">
-                                                <div data-type="youtube" data-video-id="xODCdqTWzRo"></div>
+                                            <iframe width="500" height="308" src="https://www.youtube.com/embed/61xbuz0_Y6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="plyr-video">
-                                                <div data-type="youtube" data-video-id="u_ft2nVi6_g"></div>
+                                            <iframe width="500" height="308" src="https://www.youtube.com/embed/61xbuz0_Y6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade in active" id="general-faq">
+                            <div role="tabpanel" class="tab-pane fade in " id="general-faq">
                                 <div class="pane-content">
                                     <div class="installation-steps">
                                         <div class="installation-step">
@@ -249,5 +330,6 @@
     <script src="assets/js/jquery.magnific-popup.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
+    <script src ="assets/js/support.js"></script>
 </body>
 </html>
